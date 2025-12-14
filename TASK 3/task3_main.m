@@ -17,9 +17,9 @@ N = 40;
 %Plot
 
 figure;
-plot(tO, yO(:,1), 'LineWidth',2, 'DisplayName','ode45');
+plot(tO, yO(:,1), 'LineWidth',2, 'DisplayName','R1');
 hold on
-plot(tO, yO(:,2), 'LineWidth', 2, 'DisplayName', 'ode45 - R2');
+plot(tO, yO(:,2), 'LineWidth', 2, 'DisplayName', 'R2');
 xlabel('Time');
 ylabel('R');
 legend('R1', 'R2');
