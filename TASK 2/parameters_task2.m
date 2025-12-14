@@ -7,5 +7,6 @@ function p = parameters_task2()
     p.n   = 2;
 
     p.k1  = 1;
-    p.k2  = 0.5;   % <-- THIS is the parameter to vary
+    p.k2  = 0.5;   % THIS is the parameter to vary
 end
+
