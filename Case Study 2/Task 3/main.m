@@ -147,9 +147,9 @@ grid on;
 
 sgtitle('Raw vs Quadratic vs Linear smoothing', 'FontSize', 16);
 
-% Report AVERAGES (log-phase t=4–10 typical)
+% Report AVERAGES (log-phase t=3.25-9.25)
 
-fprintf('Task 3.2 μ(t) AVERAGES (t=4–10):\n');
+fprintf('Task 3.2 μ(t) AVERAGES (t=3.25-9.25):\n');
 fprintf('Raw:     %.4f ± %.4f\n', mean(mu_raw(log_mask)), std(mu_raw(log_mask)));
 fprintf('Quad k=%d: %.4f ± %.4f\n', k_opt, mean(mu_quad(log_mask)), std(mu_quad(log_mask)));
 fprintf('Linear k=%d: %.4f ± %.4f\n', k_opt, mean(mu_lin(log_mask)), std(mu_lin(log_mask)));
