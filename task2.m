@@ -23,7 +23,7 @@ X = [
 1.59793319505874 2.53382394828956 2.51141358105043 1.27344971578537 ...
 2.26215037333670 1.63784269761602 2.14807109941103 2.22259988693345 ...
 2.35777933337034 2.04107487884435 2.52190716843348 2.01994901802561 2.13821366832011 ];
-% Select exponential growth region
+% Select exponential growth region from thr given datafile..
 idx = (t >= 7) & (t <= 9.75);
 
 t_exp = t(idx);
@@ -35,6 +35,7 @@ p = polyfit(t_exp, lnX, 1);
 mu = p(1);        % slope = growth rate
 lnX0 = p(2);      % intercept
 fprintf('Average specific growth rate mu = %.3f 1/h\n', mu);
+%to confirm whether the exponential growth forms a straight line.
 figure
 plot(t_exp, lnX, 'o', 'MarkerSize', 6)
 hold on
@@ -43,3 +44,4 @@ xlabel('Time')
 ylabel('ln(X)')
 title('Estimation of specific growth rate \mu')
 grid on
+
