@@ -30,6 +30,19 @@ title('Linear (Eq.1) vs Lagrange (Eq.2) vs Cubic spline (Eq.6)');
 xlabel('x'); ylabel('y');
 legend('data','linear','lagrange','spline','Location','best');
 
+% Plot 
+figure;
+plot(x, y, 'o', 'MarkerSize', 5); hold on;
+plot(xq, ylin, '--', 'LineWidth', 2);
+plot(xq, ylag, '-.', 'LineWidth', 2);
+plot(xq, yspl, '-',  'LineWidth', 2);
+grid on;
+ylim([-2,12]);
+
+title('Linear (Eq.1) vs Lagrange (Eq.2) vs Cubic spline (Eq.6) Refit');
+xlabel('x'); ylabel('y');
+legend('data','linear','lagrange','spline','Location','best');
+
 %% ---------------- local functions ----------------
 
 function yq = linEq1(x, y, xq)
